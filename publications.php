@@ -1,5 +1,5 @@
 <?php $title = "Sakib Apon: Publications"; 
-   include ('includes/header.php') ; ?>
+   include ('header.php') ; ?>
 
 
 
@@ -157,4 +157,4 @@
 
   </section><!-- End Services Section -->
    
-<?php include ('includes/footer.php') ; ?>
+<?php include ('footer.php') ; ?>

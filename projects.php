@@ -1,5 +1,5 @@
 <?php $title = "Sakib Apon: Publications"; 
-   include ('includes/header.php') ; ?>
+   include ('header.php') ; ?>
 
 <!-- ======= Projects Section ======= -->
     
@@ -189,4 +189,4 @@
  
   <!-- End Portfolio Section -->
 
-  <?php include ('includes/footer.php') ; ?>
+  <?php include ('footer.php') ; ?>

@@ -1,5 +1,5 @@
 <?php $title = "Sakib Apon"; 
-   include ('includes/header.php') ; ?>
+   include ('header.php') ; ?>
 
     <!-- ======= Intro Page ======= -->
     <!-- <?php include ('_pages/intro.php') ; ?> -->
@@ -104,4 +104,4 @@
     <!-- ======= Contact ======= -->
     <?php include ('contact.php') ; ?>
 
-<?php include ('includes/footer.php') ; ?>
+<?php include ('footer.php') ; ?>

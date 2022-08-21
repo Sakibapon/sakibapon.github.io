@@ -1,5 +1,5 @@
 <?php $title = "Sakib Apon: Education & Experience"; 
-   include ('includes/header.php') ; ?>
+   include ('header.php') ; ?>
 <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
         <div class="container">
@@ -118,4 +118,4 @@
       </section><!-- End Resume Section -->
 
 
-      <?php include ('includes/footer.php') ; ?>
+      <?php include ('footer.php') ; ?>
