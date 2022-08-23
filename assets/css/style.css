@@ -1090,3 +1090,52 @@ section {
     overflow: hidden;
     box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5);
 }
+
+.inproceedings {
+  background-color: #008bd2;
+  color: #fff;
+  margin-left: 80px;
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 0.70rem;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 2px;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 12%);
+}
+
+.paper {
+  background-color: #1d8465;
+  color: #fff;
+
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.70rem;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.code {
+  background-color: #2067b8;
+  color: #fff;
+
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.70rem;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.data {
+  background-color: #c138b3;
+  color: #fff;
+
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.70rem;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 3px;
+}
