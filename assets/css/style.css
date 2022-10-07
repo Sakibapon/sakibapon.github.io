@@ -1139,3 +1139,15 @@ section {
   line-height: 1;
   border-radius: 3px;
 }
+.accepted {
+  background-color: #00d212;
+  color: #fff;
+  margin-left: 80px;
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 0.70rem;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 2px;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 12%);
+}
