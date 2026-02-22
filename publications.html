@@ -1,88 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Tasnim Sakib Apon</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-</head>
+  <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<body>
-    <div class="masthead">
-        <div class="container masthead__inner">
-            <a href="index.html" class="site-title">Tasnim Sakib Apon</a>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="publications.html" class="active">Publications</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li>
-                        <button class="theme-toggle" aria-label="Toggle theme">
-                            <i id="theme-icon" class="fa-solid fa-sun"></i>
-                        </button>
-                    </li>
-                </ul>
-                <button class="mobile-menu-toggle">☰</button>
-            </div>
-        </div>
-    </div>
+      <title>Sakib Apon</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+    
+      <!-- Favicons -->
+      <link href="assets/img/pp1.jpg" rel="icon">
+      <link href="assets/img/pp1.jpg" rel="apple-touch-icon">
 
-    <div class="container initial-content">
-        <aside class="sidebar">
-            <div class="author__avatar">
-                <img src="images/profile.png" alt="Tasnim Sakib Apon">
-            </div>
-            <div class="author__content">
-                <h3 class="author__name">Tasnim Sakib Apon</h3>
-                <p class="author__pronouns">he/him</p>
-                <p class="author__bio">PhD Student researching AI & Machine Learning, Computer Vision, Edge Computing,
-                    and Autonomous Systems</p>
-            </div>
-            <div class="author__urls-wrapper">
-                <ul class="author__urls social-icons">
-                    <li><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i> Burlington, Vermont
-                    </li>
-                    <li><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i> University of
-                        Vermont</li>
-                    <li><a href="mailto:sakibapon7@gmail.com"><i class="fas fa-fw fa-envelope icon-pad-right"
-                                aria-hidden="true"></i>
-                            Email</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=Y9KajaYAAAAJ&hl=en&authuser=1"
-                            target="_blank"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i> Google Scholar</a>
-                    </li>
-                    <li><a href="https://github.com/sakibapon" target="_blank"><i
-                                class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i> GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/sakibapon/" target="_blank"><i
-                                class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i> LinkedIn</a></li>
-                    <li><a href="https://www.researchgate.net/profile/Sakib-Apon" target="_blank"><i
-                                class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>
-                            ResearchGate</a></li>
-                    <li><a href="https://orcid.org/0000-0002-5238-8276" target="_blank"><i
-                                class="ai ai-orcid ai-fw icon-pad-right"></i> ORCID</a></li>
-                </ul>
-            </div>
-        </aside>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-        <main class="page__content">
-            <h1>Publications</h1>
-            <p>Below is a list of my published research work in journals and conferences.</p>
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+      <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+      <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
-            <div id="publications-container">
-                <!-- Publications will be dynamically loaded here by JavaScript -->
-            </div>
-        </main>
-    </div>
+      <!-- jquery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.js" 
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous">
+      </script>
 
-    <footer class="page__footer">
+      <!-- Template Main CSS File -->
+      <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+      <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#Intro").load("_pages/intro.html");
+          $("#about").load("about.html"); 
+          $("#skill").load("skill.html"); 
+          $("#education").load("_pages/education.html"); 
+          $("#projects").load("_pages/projects.html"); 
+          $("#publications").load("_pages/publications.html"); 
+          $("#certificates").load("certificates.html"); 
+          $("#testimonials").load("_pages/testimonials.html"); 
+          $("#contact").load("contact.html");
+          $("#footer").load("footer.html");
+        });
+      </script> 
+
+      <!-- ======= Mobile nav toggle button ======= -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+      <!-- ======= Header ======= -->
+      <div id="header"></div>
+
+      
+      <main id="main">
+      <!-- ======= Research Papers Section ======= -->
+        <section id="services" class="services">
+           
         <div class="container">
-            <p>&copy; 2024 Tasnim Sakib Apon. Powered by Academic Pages.</p>
+            <div id="journals"> 
+            
+                <div class="section-title">
+                    <h2>Journals</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <p class="title">
+                            <a>Explainable Indoor Localization of BLE Devices through RSSI using Recursive Continuous Wavelet Transformation and XGBoost Classifier</a>
+                            <span class="accepted">Accepted </span>
+                        </h4>
+                        <p class="description"><strong></strong>  
+                            <a href="https://www.sciencedirect.com/journal/future-generation-computer-systems" target="_blank"> 
+                                <u>Future Generation Computer Systems </u>
+                            </a>
+                            &nbsp; <strong>Q1, IF: 7.307</strong>
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  27:06:2022</a> -->
+                        </p>
+                        <p class="description"><strong>Authors: </strong>A.H.M.Kamal, Md. Golam Rabiul, Md Rafiul Hassan, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Mohammad Mehedi Hassan.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                        <p class="description">
+                            <a href="https://doi.org/10.1016/j.future.2022.11.001" target="_blank" class="paper">Paper</a>
+                            <a href="https://github.com/Sakibapon/IndoorLocalaization" target="_blank" class="code">Code</a>
+                            <a href="https://www.kaggle.com/datasets/sakibapon/bledataset" target="_blank" class="data">Data</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title">
+                            <a>Interpretable Differential Diagnosis of Viral Pneumonia, Lung Opacity and Covid-19 using Tuned Transfer Learning and Explainable AI</a> 
+                            <span class="accepted">Accepted</span>
+                        </h4>
+                        <p class="description"><strong></strong>  
+                            <a href="https://www.mdpi.com/journal/healthcare" target="_blank"> 
+                                <u>Healthcare </u>
+                            </a>
+                            &nbsp; <strong>Q2, IF: 3.160</strong> 
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  27:06:2022</a> -->
+                        </p>
+                        <p class="description"><strong>Authors: </strong> Md Nazmul Islam,  Md. Golam Rabiul
+                            Alam, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Abdul Kader Muhammad Masum, Md Zia Uddin.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                        <p class="description">
+                            <a href="https://www.mdpi.com/2227-9032/11/3/410" target="_blank" class="paper">Paper</a>
+                            <a href="https://github.com/Sakibapon/Interpretable-Differential-Diagnosis-of-Viral-Pneumonia-Lung-Opacity-and-COVID-19" target="_blank" class="code">Code</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title">
+                            <a>Increasing Embedding Capacity by Exploiting Edge Pixels in Prediction Error Space</a> 
+                            <span class="accepted">Accepted </span>
+                        </h4>
+                        <p class="description"><strong></strong>  
+                            <a href="https://www.sciencedirect.com/journal/cyber-security-and-applications" target="_blank"> 
+                                <u>Cyber Security and Applications </u>
+                            </a>
+                            &nbsp; <strong></strong> 
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  20:08:2022</a> -->
+                            
+                        </p>
+                        
+                        <p class="description"><strong>Authors: </strong> Habiba Sultana,  A. H. M. Kamal, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Md. Golam Rabiul.</p>
+                        <p class="description">
+                            <a href="https://www.sciencedirect.com/science/article/pii/S2772918423000164" target="_blank" class="paper">Paper</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title">
+                            <a>Machine Learning based Stream Selection of Secondary School Students in Bangladesh</a>
+                            <span class="accepted">Accepted</span>
+                        </h4>
+                        <p class="description"><strong></strong>  
+                            <a href="https://www.ijeei.org/aims.html" target="_blank"> 
+                                <u>Indonesian Journal of Electrical Engineering and Informatics (IJEEI) </u>
+                            </a>
+                            <!-- &nbsp; <strong>Q3, SRJ: 0.23</strong> -->
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  27:06:2022</a> -->
+                        </p>
+                        <p class="description"><strong>Authors: </strong> Shabbir Ahmad, Md. Golam Rabiul Alam, Jia Uddin,  Md Roman Bhuiyan, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong> </p>
+                        <p class="description">
+                            <a href="http://section.iaesonline.com/index.php/IJEEI/article/view/4302" target="_blank" class="paper">Paper</a>
+                            <!-- <a href="" target="_blank" class="code">Code</a> -->
+                        </p>
+                    </div>
+                </div>
+            <!-- <span></span>
+            <h3>Journals Under Review</h3>  -->
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <p class="title">
+                            <a>LeukocyteNet: An Explainable Transfer-Transformer Fusion Learning Model for Leukocyte Classification</a> 
+                            <span class="inproceedings">Under Review </span>
+                        </p>
+                        <p class="description"><strong></strong>  
+                            <a href="https://www.sciencedirect.com/journal/computerized-medical-imaging-and-graphics" target="_blank"> 
+                                <u>Computerized Medical Imaging and Graphics</u>
+                            </a>
+                            &nbsp; <strong>Q1, IF: 5.7</strong> 
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  27:06:2022</a> -->
+                        </p>
+                        <p class="description"><strong>Authors: </strong><strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Md. Golam Rabiul, Md Tanzim Reza, Baidya Sangita, Tahmid Mohammad Fahim, Alam Md. Ashraful,
+                                Almoyad Muhammad, Hasan Khondokar Fida, Moni Mohammad Ali.</p>
+                        
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->  
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title">
+                            <a>A Diversiform Brain Tumor Classification Leveraging Hybrid Recursive MRI Image
+                                Enhancement Pipeline for T1, T2, and T1C+ Images and Utilizing A Coalition of
+                                CoatNet‑HorNet Transformers</a>
+                            <span class="inproceedings">Under Review </span>
+                        </h4>
+                        <p class="description"><strong></strong>  
+                            <a href="https://cis.ieee.org/publications/t-emerging-topics-in-ci" target="_blank"> 
+                                <u>IEEE Transactions on Emerging Topics in Computational Intelligence</u>
+                            </a>
+                            &nbsp; <strong>Q1, IF: 4.34</strong>
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  27:06:2022</a> -->
+                        </p>
+                        <p class="description"><strong>Authors: </strong>  <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, 
+                            , Md. Golam Rabiul Alam, Mahmudul Hasan, Shifat Hamidi, Mohammad Mehedi Hassan.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title">
+                            <a>A Lightweight Dual Attention Multi‑Axis Vision Transformer for Ocular Toxoplasmosis
+                                Classification</a>
+                            <span class="inproceedings">Under Review </span>
+                        </h4>
+                        <p class="description"><strong></strong>  
+                            <a href="https://www.sciencedirect.com/journal/computers-in-biology-and-medicine" target="_blank"> 
+                                <u>Computers in Biology and Medicine</u>
+                            </a>
+                            &nbsp; <strong>Q1, IF: 7.7</strong>
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  27:06:2022</a> -->
+                        </p>
+                        <p class="description"><strong>Authors: </strong> <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, 
+                            , Md Tanzim Rezaa, Md. Golam Rabiul Alama, Md. Abdul Malek, Mohammad Mehedi Hassan.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title">
+                            <a>Time Series Anomaly Detection in Cyber‑physical Systems using Generative Adversarial Network and Homogeneous Data Clustering</a>
+                            <span class="inproceedings">Under Review </span>
+                        </h4>
+                        <p class="description"><strong></strong>  
+                            <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570650" target="_blank"> 
+                                <u>IEEE Transactions on Computational Social Systems </u>
+                            </a>
+                            &nbsp; <strong>Q1, IF: 4.747</strong>
+                            <!-- <a>&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; Submitted on:  27:06:2022</a> -->
+                        </p>
+                        <p class="description"><strong>Authors: </strong> A. H. M. Kamal, Md. Golam Rabiul Alam, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, 
+                        Tushar Kanti Saha, Md. Rafiul Islam, Mohammad Mehedi Hassan, Md Rafiul Hassan.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <p class="title"><a>Blockchain‑based Federated Learning for Securing Learning Parameters of Large‑Scale Distributed Edge Computing</a>
+                            <span class="inproceedings">Under Review </span> 
+                        </p>
+                        <p class="description"><strong></strong>  <a href="https://spj.science.org/journal/icomputing" target="_blank"><u>Intelligent Computing</u></a></p>
+                        <p class="description"><strong>Authors:</strong> Fazle Rabbi Faiyaz, Afrin Sultana Lisa, Laisa Rahat, Nafisa Tabassum, Walid Bin Istiaq, Moin Mostakim, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Md. Golam Rabiul Alam, Mohammad Mehedi Hassan.</p>
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title"><a>EczemaLess: Multi‑Layer Segmentation Approach for Detecting Eczema Severity <span class="patentreview">Waiting for Provisional Patent Review </span></a></h4> 
+                        <p class="description"><strong>Authors: </strong> Adnan Taufique, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>.</p>
+                        
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <div id="conferences">            
+                <div class="section-title">
+                    <h2>Conference</h2>
+
+                </div>
+                
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title"><a href="https://ieeexplore.ieee.org/document/9732601" target="_blank">Real Time Action Recognition from Video Footage</a></h4>
+                        <p class="description"><strong></strong> <a href="http://fse.green.edu.bd/sti-2021/?fbclid=IwAR2Oa3ATiis3Px-DMBRzHeXQ6PhxKWW9vYQ5BQMZn0HTITn0yJro-d57LZQ#intro" target="_blank"> 
+                        <u>3rd International conference on sustainable technologies for industry 4.0</u></a></p>
+                        <p class="description"><strong>Authors: </strong><strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Mushfiqul Islam Chowdhury, Md Zubair Reza, Arpita Datta, Syeda Tanjina Hasan, Md. Golam Rabiul Alam.</p>
+                        <p class="description">
+                            <a href="https://ieeexplore.ieee.org/document/9732601" target="_blank" class="paper">Paper</a>
+                            <a href="https://github.com/Sakibapon/Real-Time-Action-Recognition-from-Video-Footage" target="_blank" class="code">Code</a>
+                            <a href="https://drive.google.com/drive/u/2/folders/1BTUFlf-5CBbTuCmE6mEv3CBD1TjGEhkU" target="_blank" class="data">Data</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title"><a href="https://ieeexplore.ieee.org/document/9718400" target="_blank" >Demystifying  Deep Learning Models for Retinal OCT Disease Classification using Explainable AI</a></h4>
+                        <p class="description"><strong></strong>  <a href="https://ieee-csde.org/2021/" target="_blank"><u>8th IEEE Asia Pacific Conference on Computer Science 
+                            and Data Engineering </u></a></p>
+                        <p class="description"><strong>Authors: </strong><strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Mohammad Mahmudul Hasan, Abrar Islam, Md. Golam Rabiul Alam.</p>
+                        <p class="description">
+                            <a href="https://ieeexplore.ieee.org/document/9718400" target="_blank" class="paper">Paper</a>
+                            <a href="https://github.com/Sakibapon/RetinalOCT" target="_blank" class="code">Code</a>
+                            <a href="https://www.kaggle.com/datasets/paultimothymooney/kermany2018" target="_blank" class="data">Data</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <h4 class="title"><a href="https://ieeexplore.ieee.org/document/9608407" target="_blank">CS: GO Action Recognition and Data Collection Automation Using Transfer Learning and  Majority Voting</a></h4>
+                        <p class="description"><strong></strong><a href="http://icts.if.its.ac.id/2021/" target="_blank"><u> 13th International Conference on Information & 
+                            Communication Technology and System</u></a> </p>
+                        <p class="description"><strong>Authors: </strong><strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Abrar Islam, Md. Golam Rabiul Alam.</p>
+                        <p class="description">
+                            <a href="https://ieeexplore.ieee.org/document/9608407" target="_blank" class="paper">Paper</a>
+                            <a href="https://github.com/Sakibapon/CSGO-Video-Analysis" target="_blank" class="code">Code</a>
+                            <!-- <a href="" target="_blank" class="data">Data</a> -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <p class="title"><a>BanglaSarc: A Dataset for Sarcasm Detection</a>  </p>
+                        <p class="description"><strong></strong>  <a href="https://ieee-csde.org/csde2022" target="_blank"><u>9th IEEE Asia Pacific Conference on Computer Science 
+                            and Data Engineering </u></a></p>
+                        <p class="description"><strong>Authors: </strong><strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Ramisa Anan, Elizabeth Antora Modhu, Arjun Suter, Ifrit Jamal Sneha, Md. Golam Rabiul Alam.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                        <p class="description">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10089322" target="_blank" class="paper">Paper</a>
+                            <a href="https://github.com/Sakibapon/SarcasmDetection" target="_blank" class="code">Code</a>
+                            <a href="https://www.kaggle.com/datasets/sakibapon/banglasarc" target="_blank" class="data">Data</a>
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <p class="title">
+                            <a>Interpretable Bangla Sarcasm Detection using BERT and Explainable AI </a> 
+                        </p>
+                        <p class="description"><strong></strong>  <a href="https://ieee-ccwc.org/" target="_blank"><u>13th IEEE CCWC 2022 </u></a></p>
+                        <p class="description"><strong>Authors:</strong> Ramisa Anan <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Elizabeth Antora Modhu, Jeba Tahsin, Sudipta Mondal, MD. Golam Rabiul Alam.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                        <p class="description">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10099331" target="_blank" class="paper">Paper</a>
+                            <a href="https://github.com/Sakibapon/SarcasmDetection" target="_blank" class="code">Code</a>
+                            <a href="https://www.kaggle.com/datasets/sakibapon/banglasarc" target="_blank" class="data">Data</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <p class="title"><a>Explainable AI based Glaucoma Detection using Transfer Learning and LIME</a>
+
+                        </p>
+                        <p class="description"><strong></strong>  <a href="https://ieee-csde.org/csde2022" target="_blank"><u>9th IEEE Asia Pacific Conference on Computer Science 
+                            and Data Engineering </u></a></p>
+                        <p class="description"><strong>Authors:</strong> Touhidul Islam Chayan, Anita Islam, Eftykhar Rahman, Md. Tanzim Reza, <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Md. Golam Rabiul Alam.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                        <p class="description">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10089310" target="_blank" class="paper">Paper</a>
+                            <!-- <a href="" target="_blank" class="code">Code</a> -->
+                            <a href="https://www.kaggle.com/datasets/sshikamaru/glaucoma-detection" target="_blank" class="data">Data</a>
+                        </p>
+                        
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col" >
+                        <div class="icon"><i class="icofont-papers"></i></div>
+                        <p class="title"><a href="https://ieeexplore.ieee.org/abstract/document/10534528" target="_blank">
+                            Transforming Precision: A Comparative Analysis of Vision Transformers, CNNs, and Traditional ML for Knee Osteoarthritis Severity Diagnosis</a>
+
+                        </p>
+                        <p class="description"><strong></strong>  <a href="https://ieeexplore.ieee.org/xpl/conhome/10534252/proceeding" target="_blank"><u>2024 6th International Conference on Electrical Engineering and Information & Communication Technology (ICEEICT) </u></a></p>
+                        <p class="description"><strong>Authors:</strong> <strong style="color: #149ddd;">Tasnim Sakib Apon</strong>, Md. Fahim-Ul-Islam, Nafiz Imtiaz Rafin, Joya Akter, Md. Golam Rabiul Alam.</p>
+                        <!-- <p class="description" style="color: #CBC313;">In Proceedings</p> -->
+                        <p class="description">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10534528" target="_blank" class="paper">Paper</a>
+                            <!-- <a href="" target="_blank" class="code">Code</a> -->
+                            <!-- <a href="https://www.kaggle.com/datasets/sshikamaru/glaucoma-detection" target="_blank" class="data">Data</a> -->
+                        </p>
+                        
+                    </div>
+                </div> 
+
+            </div>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
-</body>
+        </section><!-- End Services Section -->
 
-</html>
+            </main>
+
+        <!-- ======= Footer ======= -->
+        <div id="footer"></div>
+
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    </body>
+
+</html>        
+ 
